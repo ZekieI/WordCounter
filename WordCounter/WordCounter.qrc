@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/menu.png</file>
+        <file>img/rec-button.png</file>
+        <file>img/pause.png</file>
+        <file>img/quit.png</file>
+    </qresource>
+</RCC>
