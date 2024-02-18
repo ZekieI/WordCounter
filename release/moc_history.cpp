@@ -6,9 +6,32 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../WordCounter/history.h"
+#include "../../git/WordCounter/WordCounter/history.h"
 #include <QtGui/qtextcursor.h>
 #include <QtGui/qscreen.h>
+#include <QtCharts/qlineseries.h>
+#include <QtCharts/qabstractbarseries.h>
+#include <QtCharts/qvbarmodelmapper.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCharts/qcandlestickseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCore/qabstractitemmodel.h>
 #include <QtCore/qmetatype.h>
 
 #if __has_include(<QtCore/qtmochelpers.h>)
@@ -41,14 +64,14 @@ namespace {
 struct qt_meta_stringdata_CLASSHistoryENDCLASS_t {};
 static constexpr auto qt_meta_stringdata_CLASSHistoryENDCLASS = QtMocHelpers::stringData(
     "History",
-    "on_pushButton_clicked",
+    "on_reloadButton_clicked",
     ""
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSHistoryENDCLASS_t {
     uint offsetsAndSizes[6];
     char stringdata0[8];
-    char stringdata1[22];
+    char stringdata1[24];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
@@ -56,11 +79,11 @@ struct qt_meta_stringdata_CLASSHistoryENDCLASS_t {
 Q_CONSTINIT static const qt_meta_stringdata_CLASSHistoryENDCLASS_t qt_meta_stringdata_CLASSHistoryENDCLASS = {
     {
         QT_MOC_LITERAL(0, 7),  // "History"
-        QT_MOC_LITERAL(8, 21),  // "on_pushButton_clicked"
-        QT_MOC_LITERAL(30, 0)   // ""
+        QT_MOC_LITERAL(8, 23),  // "on_reloadButton_clicked"
+        QT_MOC_LITERAL(32, 0)   // ""
     },
     "History",
-    "on_pushButton_clicked",
+    "on_reloadButton_clicked",
     ""
 };
 #undef QT_MOC_LITERAL
@@ -98,7 +121,7 @@ Q_CONSTINIT const QMetaObject History::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSHistoryENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<History, std::true_type>,
-        // method 'on_pushButton_clicked'
+        // method 'on_reloadButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -110,7 +133,7 @@ void History::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         auto *_t = static_cast<History *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_clicked(); break;
+        case 0: _t->on_reloadButton_clicked(); break;
         default: ;
         }
     }

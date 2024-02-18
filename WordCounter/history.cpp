@@ -168,7 +168,8 @@ void History::LoadChart()
                 categories.append(QString::fromStdString(date));
             }
         }
-
+        *set0 << this->counter->count;
+        categories.append("Aujoud'hui");
     }
     else
     {
