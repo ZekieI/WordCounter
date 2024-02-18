@@ -62,8 +62,10 @@ void Counter::on_rec_button_clicked()
 void Counter::on_menu_button_clicked()
 {
     hist->WriteHist();
-    hist->LoadHist();
+    hist->LoadChart();
+    hist->LoadChart();
     hist->show();
+    hist->showMaximized();
 }
 
 void Counter::mousePressEvent(QMouseEvent *event) {

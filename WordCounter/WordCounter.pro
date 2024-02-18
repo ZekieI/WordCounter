@@ -39,3 +39,5 @@ RESOURCES += \
 
 DISTFILES += \
     history.csv
+
+QT += charts

@@ -63,6 +63,7 @@ int main (int argc, char *argv[])
 
     counter->show();
     hist->LoadHist();
+    hist->LoadChart();
 
     return a.exec();
 }
